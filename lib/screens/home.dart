@@ -21,27 +21,9 @@ class Home extends StatelessWidget {
         title: const Text('Home'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: TextField(
-                onChanged: (value) => playerName = value,
-                onSubmitted: (value) => _changePage(),
-                decoration: InputDecoration(
-                  hintText: "Enter your name",
-                  filled: true,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
-            ),
-            ElevatedButton(
-              onPressed: _changePage,
-              child: const Text('Play'),
-            )
+        child: Column( // TODO: Center the content
+          children: [ // TODO: Add a TextField to get the player name and a play button that calls _changePage()
+              const Text("Home page")
           ],
         ),
       ),
